@@ -446,7 +446,14 @@ a:hover, a:active, a:focus {
   margin-bottom: 25px;
   padding: 0;
   vertical-align: middle;
+  -moz-transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(0%);
+  /*
+  
   text-align: center;
+  */
 }
 
 .project-overlay {
@@ -737,8 +744,21 @@ footer .copyright-text {
     height: 100vh;
   }
 
+  .about-info h1 {
+    font-size: 20px;
+    letter-spacing: 3px;  
+    margin: 5;
+  }
+
+  .about-info h2 {    
+    color: #cec8c8;
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-family: 'PunkRocker Stamp', sans-serif;
+  }
+
   .about-info h3 {
-    font-size: 12px;
+    font-size: 25px;
     letter-spacing: 6px;
   }
 
