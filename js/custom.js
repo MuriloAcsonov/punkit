@@ -44,6 +44,6 @@
             itemsTabletSmall: false,
             itemsMobile : [479,1],
             Speedfast: 200,
-        });
+        });        
 
 })(jQuery);
