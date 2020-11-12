@@ -32,6 +32,16 @@
           }
         initParallax();
 
+        //SCROLL WHATS BUTTON
+        var mybutton = $('#whats');
+
+        $(window).scroll(function scrollFunction() {          
+          if ($('body').scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.show();
+          } else {
+            mybutton.hide();
+          }
+        });        
 
         // Owl Carousel
         var owl = $("#owl-team");
@@ -44,6 +54,6 @@
             itemsTabletSmall: false,
             itemsMobile : [479,1],
             Speedfast: 200,
-        });        
+        });              
 
 })(jQuery);
