@@ -12,14 +12,16 @@
         $('.navbar-collapse a').on('click',function(){
           $(".navbar-collapse").collapse('hide');
         });
-
-        $(window).scroll(function() {
-          if ($(".navbar").offset().top > 50) {
-            $(".navbar-fixed-top").addClass("top-nav-collapse");
-              } else {
-                $(".navbar-fixed-top").removeClass("top-nav-collapse");
-              }
-        });
+//
+        
+//
+        //$(window).scroll(function() {
+        //  if ($('body').scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        //    navbar.addClass("top-nav-collapse");
+        //      } else {
+//                navbar.removeClass("top-nav-collapse");
+        //      }
+        //});
 
 
         // PARALLAX JS
@@ -42,13 +44,27 @@
 
         //SCROLL WHATS BUTTON
         var mybutton = $('#whats');
+        var mybar = $('.custom-navbar');
+        var about = $('#about');        
+        var contact = $('#contact');
 
         $(window).scroll(function scrollFunction() {          
+          
           if ($('body').scrollTop > 20 || document.documentElement.scrollTop > 20) {
             mybutton.show();
           } else {
-            mybutton.hide();
+            mybutton.hide();            
           }
+
+          if (($('body').scrollTop > about.offset().top - 90 || document.documentElement.scrollTop > about.offset().top - 90) && ($('body').scrollTop < contact.offset().top - 200 || document.documentElement.scrollTop < contact.offset().top - 200)) {
+            mybar.css("background", "linear-gradient(180deg, rgba(1,3,120,1) 12%, rgba(0,0,0,1) 50%)");
+          } else if ($('body').scrollTop < 20 || document.documentElement.scrollTop < 20) {
+            mybar.css("background", "transparent");
+          } else {
+            mybar.css("background", "rgb(0,0,0)");
+          }
+          
+
         });        
 
         // Owl Carousel

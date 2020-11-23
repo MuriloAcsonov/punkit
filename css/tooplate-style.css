@@ -313,6 +313,7 @@ a:hover, a:active, a:focus {
   margin-bottom: 0;
   background-color: #310c0c;
   padding: 20px 0;
+  border: none;
 }
 
 .custom-navbar .navbar-brand {
@@ -497,7 +498,9 @@ a:hover, a:active, a:focus {
 }
 
 .project-item .project-item_bottom {
-	display: block;
+  display: block;
+  height: 380px;
+  width: 1200px;
 }
 
 .project-item .project-item_top {
