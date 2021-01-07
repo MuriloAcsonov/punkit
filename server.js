@@ -5,5 +5,5 @@ const port = 3000
 app.use('/', express.static(__dirname));
 
 app.listen(port, () => {
-  console.log(`Listening at http://localhost:${port}`)
+  console.log(`Listening at: http://localhost:${port}`)
 })
